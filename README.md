@@ -8,42 +8,46 @@ This C program serves as a simple password strength meter that reads potential p
 - [How to Use](#how-to-use)
 - [Tests](#tests)
 - [File Structure](#file-structure)
-  
 
 ## Features
 
-- **Password Length Validation**:
+- **Password Length Validation**:  
   The program checks if the password meets the minimum and maximum length requirements.
 
-- **Character Variety**:
+- **Character Variety**:  
   Ensures that the password contains a mix of uppercase, lowercase letters, digits, and special characters.
 
-- **No Character Repetition**:
+- **No Character Repetition**:  
   Checks that the password does not contain repeated characters.
 
-- **Ease of Use**:
+- **Ease of Use**:  
   Simple command-line interface for easy usage and understanding.
 
-- **Extensible Testing Framework**:
+- **Extensible Testing Framework**:  
   The program provides a structure for adding and modifying tests to suit different password strength policies.
 
-- **Data File Reading**:
+- **Data File Reading**:  
   Reads potential passwords from data files for automated testing and evaluation.
-
 
 ## How to Use
 
 To use this program, follow these steps:
 
-1. **Compile the Code**:
+1. **Clone the Repository**:  
+   Clone the repository to your local machine using the following command:
+
+   ```bash
+   git clone https://github.com/hasanzaidi1/password_strength.git
+
+2. **Compile the Code**:
    Compile the `main.c` file using a C compiler such as `gcc`.
 
    ```bash
-   gcc main.c -o password_strength_meter
-2. **Run the Code**:
+   gcc main.c -o password_strength
+3. **Run the Code**:
    Execute the compiled program.
    ```bash
-   ./password_strength_meter
+   ./password_strength
 The program will read potential passwords from the data files (Proposed passwords #1.txt, Proposed passwords #2.txt, Proposed passwords #3.txt), apply the tests, and display the results.
 
 ## Tests
